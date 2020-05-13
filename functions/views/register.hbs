@@ -77,17 +77,26 @@
                 <span style="color: red;">{{error}}</span>
               </div>
               <div class="card-body">
-                <form action="/login" method="POST">
+                <form action="/register" method="POST">
                   <div class="form-group">
-                    <input type="email" name="email" placeholder="Email Address" class="form-control" />
+                    <input type="text" name="fullname" placeholder="Full Name" class="form-control" required />
                   </div>
                   <div class="form-group">
-                    <input type="password" name="password" placeholder="Password" class="form-control" />
+                    <input type="email" name="email" placeholder="Email Address" class="form-control" required />
+                  </div>
+                  <div class="form-group">
+                    <input type="tel" name="mobile" placeholder="Mobile Number" class="form-control" required />
+                  </div>
+                  <div class="form-group">
+                    <input type="password" name="password" placeholder="Password" class="form-control" required />
+                  </div>
+                  <div class="form-group">
+                    <input type="password" name="rpass" placeholder="Retype Password" class="form-control" required />
                   </div>
               </div>
               <div class="card-footer text-center">
                   <div class="form-group">
-                    <input type="submit" class="btn btn-block btn-primary form-control" value="Login" />
+                    <input type="submit" class="btn btn-block btn-primary form-control" value="Create Account" />
                   </div>
                 </form>
               </div>
